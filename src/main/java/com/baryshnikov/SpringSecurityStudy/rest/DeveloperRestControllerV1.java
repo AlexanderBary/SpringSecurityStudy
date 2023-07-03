@@ -4,7 +4,6 @@ import com.baryshnikov.SpringSecurityStudy.model.Developer;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -40,5 +39,5 @@ public class DeveloperRestControllerV1 {
     public void deleteById(@PathVariable Long id) {
         this.DEVELOPERS.removeIf(developer -> developer.getId().equals(id));
     }
-    
+
 }
